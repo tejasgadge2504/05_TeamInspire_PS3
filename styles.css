@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -45,6 +49,7 @@ body {
   
   nav ul li {
     display: inline;
+    
   }
   
   nav ul li a {
@@ -52,6 +57,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     margin: 0 15px;
+    transition: 0.3s linear;
   }
   
   nav ul li a:hover {
@@ -215,3 +221,70 @@ img{
   width: 1200px;
   
 }
+
+.Wrapper{
+  max-width: 75%;
+  margin: auto;
+}
+
+.Wrapper > p,
+.Wrapper > h1{
+  margin: 1.5rem 0;
+   text-align: start;
+}
+
+.Wrapper > h1{
+  letter-spacing: 2px;
+}
+
+.accordian{
+background-color: white;
+color: #222;
+cursor: pointer;
+font-size: 1.2rem;
+width: 100%;
+padding: 2rem 2.5rem;
+border: none;
+outline: none;
+transition: 0.4s;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: normal;
+}
+
+.accordian i{
+  font-size: 1.6rem;
+}
+.active,
+.accordian:hover {
+background-color: #6675FA;
+color: white;
+}
+
+.panel{
+  display: none;
+  padding: 0 2rem 2.5rem 2rem;
+  background-color: #6675FA;
+  overflow: hidden;
+  background-color:#6675FA;
+}
+.panel p{
+  color:white;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+.faq{
+  border: 1px solid rgba(0,0,0,.2);
+  margin: 15px 0;
+  border-radius: 20px;
+}
+
+.faq .active{
+  border: none;
+}
+
+.conclude{
+  font-size: 1rem;
+}
+
