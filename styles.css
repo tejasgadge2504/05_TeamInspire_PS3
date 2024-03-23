@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f5f7;
+    color: #333;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+  }
+  
+  nav ul li a:hover {
+    color: #f0f0f0;
+  }
+  
+  .main-content {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  .feature {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .feature h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #3498db;
+  }
+  
+  .feature p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 18px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #e74c3c;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
