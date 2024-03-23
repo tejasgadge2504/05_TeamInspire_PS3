@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -45,6 +49,7 @@ body {
   
   nav ul li {
     display: inline;
+    
   }
   
   nav ul li a {
@@ -52,6 +57,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     margin: 0 15px;
+    transition: 0.3s linear;
   }
   
   nav ul li a:hover {
@@ -217,6 +223,10 @@ img{
 }
 
 
+.dark-mode body{
+  background-color: #333;
+}
+
 .dark-mode header {
   background-color: #1a1a1a; 
   color: #e0e0e0; 
@@ -286,20 +296,60 @@ img{
   color: #fff; 
 }
 
+.dark-mode .accordian{
+  background-color: #333;
+  color: #fff;
+  
+}
+.dark-mode .active,
+.accordian:hover {
+background-color: #fff;
+color: white;
+}
+.dark-mode .Wrapper {
+  background-color: #333;
+  color: #fff;
+}
 
-@media screen and (max-width: 768px) {
+.dark-mode .faq {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Adjust border color if needed */
+}
+
+.dark-mode .faq .panel {
+  background-color: #555; /* Adjust panel background color if needed */
+}
+
+.dark-mode .faq .panel p {
+  color: #fff; /* Adjust panel text color if needed */
+}
+
+@media screen and (max-width: 780px) {
   body {
-    width: fit-content;
+    width: max-content;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
-
+ 
   .Navbar {
-    padding: 10px; 
+    padding: 10px;
+   width: fit-content;
+  
   }
-
+  .part1 {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
   nav ul li a {
-    font-size: 16px; 
+    font-size: 24px; 
   }
-
+  header{
+    flex-direction: row;
+    justify-content: center;
+  }
   header h1 {
     font-size: 24px; 
   }
@@ -318,7 +368,7 @@ img{
 
   .feature {
     width: 100%; 
-    /* margin: 20px 0;  */
+    margin: 20px 0; 
   }
 
   .feature h2 {
@@ -334,7 +384,87 @@ img{
   }
 
   .logo img {
-    width: 120px; 
+    width: 200px; 
   }
+  .Resume {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .R-features {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .uploadText {
+    width: 100%; 
+  }
+}
+.Wrapper{
+  max-width: 75%;
+  margin: auto;
+}
+
+.Wrapper > p,
+.Wrapper > h1{
+  margin: 1.5rem 0;
+   text-align: start;
+}
+
+.Wrapper > h1{
+  letter-spacing: 2px;
+}
+
+.accordian{
+background-color: white;
+color: #222;
+cursor: pointer;
+font-size: 1.2rem;
+width: 100%;
+padding: 2rem 2.5rem;
+border: none;
+outline: none;
+transition: 0.4s;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: normal;
+}
+
+.accordian i{
+  font-size: 1.6rem;
+}
+.active,
+.accordian:hover {
+background-color: #6675FA;
+color: white;
+}
+
+.panel{
+  display: none;
+  padding: 0 2rem 2.5rem 2rem;
+  background-color: #6675FA;
+  overflow: hidden;
+  background-color:#6675FA;
+}
+.panel p{
+  color:white;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+.faq{
+  border: 1px solid rgba(0,0,0,.2);
+  margin: 15px 0;
+  border-radius: 20px;
+}
+
+.faq .active{
+  border: none;
+}
+
+.conclude{
+  font-size: 1rem;
+
 }
 
