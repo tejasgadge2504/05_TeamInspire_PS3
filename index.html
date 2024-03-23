@@ -17,13 +17,16 @@
         <img src="./images/logo.png" data-aos="zoom-in" alt="Company Logo">
       </div>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#featured">About Us</a></li>
           <li><a href="#">FAQ's</a></li>
           <li><a href="#">Contact US</a></li>
           <li><a href="#" class="button">Dark Mode</a></li>
         </ul>
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
       </nav>
     </div>
   </header>
@@ -94,5 +97,20 @@
         offset: 80,
     });
   </script>
+
+<script>
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function() {
+    // Select the dark mode button
+    const darkModeButton = document.querySelector('.button');
+
+    // Add a click event listener to the dark mode button
+    darkModeButton.addEventListener('click', function() {
+      // Toggle the dark-mode class on the body
+      document.body.classList.toggle('dark-mode');
+    });
+  });
+</script>
+
 </body>
 </html>
