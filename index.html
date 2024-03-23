@@ -20,8 +20,8 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#featured">About Us</a></li>
-          <li><a href="#">FAQ's</a></li>
-          <li><a href="#">Contact US</a></li>
+          <li><a href="#faq">FAQ's</a></li>
+          <li><a href="#contact">Contact US</a></li>
           <li><a href="#" class="button">Dark Mode</a></li>
         </ul>
       </nav>
@@ -70,19 +70,67 @@
         <h3>Upload Your Resume Here....</h3>
       </div>
       <div class="uploadBtn cta-button">
-       <a>Upload</a>
+       <a>Upload<input type="file" accept=".pdf"></a>
+       
       </div>
     </div>
   </div>
 
-  <footer>
+
+
+  <div class="Wrapper" id="faq">
+    <h1 style="margin-left: 250px;"> Frequently Asked Questions</h1>
+    
+    <div class="faq">
+        <button class="accordian"> How does Resumate analyze my resume? <i class="fa fa-chevron-down"></i></button>
+    <div class="panel">
+        <p>Resumate utilizes advanced algorithms to parse and analyze your resume, identifying key skills, experiences, and qualifications to provide personalized feedback </p>
+    </div>
+    </div>
+    
+    <div class="faq">
+        <button class="accordian"> Can Resumate help improve my resume?<i class="fa fa-chevron-down"></i></button>
+    <div class="panel">
+        <p>Yes, Resumate offers valuable insights and suggestions for optimizing your resume, including tips for formatting, content organization, and keyword optimization.</p>
+    </div>
+    </div>
+    
+    <div class="faq">
+        <button class="accordian">  How accurate are the job recommendations provided by Resumate?
+    
+    <i class="fa fa-chevron-down"></i></button>
+    <div class="panel">
+        <p>Resumate leverages real-time industry data and machine learning algorithms to deliver accurate and tailored job recommendations based on your skills, preferences, and industry trends.</p>
+    </div>
+    </div>
+    
+    <div class="faq">
+        <button class="accordian">Is there a limit to the number of resumes I can upload on Resumate?<i class="fa fa-chevron-down"></i></button>
+    <div class="panel">
+        <p>No, there's no limit to the number of resumes you can upload on Resumate. You can upload multiple resumes and receive feedback on each one.</p>
+    </div>
+    </div>
+    
+  
+    
+    <div class="faq">
+        <button class="accordian"> Does Resumate offer career development resources in addition to job recommendations? <i class="fa fa-chevron-down"></i></button>
+    <div class="panel">
+        <p> Yes, Resumate offers a wide range of career development resources, including courses, articles, and videos, to support your professional growth and advancement.</p>
+    </div>
+    </div>
+    
+    </div>
+    
+
+  <footer id="contact">
     <div class="social-icons">
       <a href="#"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-facebook-f"></i></a>
       <a href="#"><i class="fab fa-linkedin-in"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
-    <p>© 2024 Career Navigator. All rights reserved.</p>
+    <p class="conclude">© 2024 RESUMATE .Developed with ❤️‍🔥 by Team INSPIRE. All rights reserved.</p>
   </footer>
   <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
   <script src="https://mediafiles.botpress.cloud/dd399998-481a-41ae-a033-e6836bce865b/webchat/config.js" defer></script>  
@@ -94,5 +142,25 @@
         offset: 80,
     });
   </script>
+
+  <script>
+    var acc = document.getElementsByClassName("accordian");
+
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+
+</script>
+
+
 </body>
 </html>
