@@ -17,13 +17,16 @@
         <img src="./images/logo.png" data-aos="zoom-in" alt="Company Logo">
       </div>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#featured">About Us</a></li>
           <li><a href="#faq">FAQ's</a></li>
           <li><a href="#contact">Contact US</a></li>
           <li><a href="#" class="button">Dark Mode</a></li>
         </ul>
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
       </nav>
     </div>
   </header>
@@ -70,8 +73,8 @@
         <h3>Upload Your Resume Here....</h3>
       </div>
       <div class="uploadBtn cta-button">
-       <a>Upload<input type="file" accept=".pdf"></a>
-       
+        <label for="fileInput">Upload</label>
+        <input type="file" id="fileInput" accept=".pdf" style="display: none;">
       </div>
     </div>
   </div>
@@ -143,6 +146,20 @@
     });
   </script>
 
+<script>
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function() {
+    // Select the dark mode button
+    const darkModeButton = document.querySelector('.button');
+
+    // Add a click event listener to the dark mode button
+    darkModeButton.addEventListener('click', function() {
+      // Toggle the dark-mode class on the body
+      document.body.classList.toggle('dark-mode');
+    });
+  });
+</script>
+
   <script>
     var acc = document.getElementsByClassName("accordian");
 
@@ -159,6 +176,26 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const uploadButton = document.querySelector('.uploadBtn');
+  const fileInput = document.getElementById('fileInput');
+
+  
+  uploadButton.addEventListener('click', function() {
+    
+    fileInput.click();
+  });
+
+  
+  fileInput.addEventListener('change', function() {
+    
+    const selectedFile = fileInput.files[0];
+    console.log("Selected file:", selectedFile);
+    
+  });
+});
 </script>
 
 

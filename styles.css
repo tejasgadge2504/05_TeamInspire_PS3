@@ -186,7 +186,7 @@ img{
   }
   
   .logo img {
-    width: 150px;
+    width: 200px;
     height: auto;
     margin-right: 20px;
   }
@@ -222,6 +222,185 @@ img{
   
 }
 
+
+.dark-mode body{
+  background-color: #333;
+}
+
+.dark-mode header {
+  background-color: #1a1a1a; 
+  color: #e0e0e0; 
+}
+
+
+.dark-mode .Navbar {
+  background-color: #1a1a1a; 
+}
+
+.dark-mode .nav-links li a {
+  color: #e0e0e0;
+}
+
+.dark-mode .button {
+  background-color: #333;
+  color: #fff; 
+}
+
+
+.dark-mode footer {
+  background-color: #222; 
+  color: #ccc; 
+}
+
+
+.dark-mode .social-icons a {
+  color: #ccc;
+}
+
+
+.dark-mode .part1 {
+  background-color: #333; 
+}
+
+.dark-mode .main-content h1 {
+  color: #fff; 
+}
+
+
+.dark-mode .container {
+  background-color: #1a1a1a; 
+  color: #e0e0e0; 
+}
+
+.dark-mode .features .feature h2 {
+  color: #333; 
+}
+
+.dark-mode .features .feature p {
+  color: #a5a5a5; 
+}
+
+
+.dark-mode .Resume {
+  background-color: #333; 
+  color: #fff; 
+}
+.dark-mode .ResumeUpload h2{
+  color: #fff;
+}
+.dark-mode .R-features .uploadText h3 {
+  color: #ccc; 
+}
+
+.dark-mode .uploadBtn a {
+  color: #fff; 
+}
+
+.dark-mode .accordian{
+  background-color: #333;
+  color: #fff;
+  
+}
+.dark-mode .active,
+.accordian:hover {
+background-color: #fff;
+color: white;
+}
+.dark-mode .Wrapper {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .faq {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Adjust border color if needed */
+}
+
+.dark-mode .faq .panel {
+  background-color: #555; /* Adjust panel background color if needed */
+}
+
+.dark-mode .faq .panel p {
+  color: #fff; /* Adjust panel text color if needed */
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    width: max-content;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+ 
+  .Navbar {
+    padding: 10px;
+   width: fit-content;
+  
+  }
+  .part1 {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  nav ul li a {
+    font-size: 24px; 
+  }
+  header{
+    flex-direction: row;
+    justify-content: center;
+  }
+  header h1 {
+    font-size: 24px; 
+  }
+
+  .main-content {
+    margin-top: 40px;
+  }
+
+  .main-content > h1 {
+    font-size: 2rem; 
+  }
+
+  .features {
+    margin-top: 40px; 
+  }
+
+  .feature {
+    width: 100%; 
+    margin: 20px 0; 
+  }
+
+  .feature h2 {
+    font-size: 24px; 
+  }
+
+  .feature p {
+    font-size: 16px; 
+  }
+
+  footer p {
+    font-size: 16px; 
+  }
+
+  .logo img {
+    width: 200px; 
+  }
+  .Resume {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .R-features {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .uploadText {
+    width: 100%; 
+  }
+}
 .Wrapper{
   max-width: 75%;
   margin: auto;
@@ -286,5 +465,6 @@ color: white;
 
 .conclude{
   font-size: 1rem;
+
 }
 
